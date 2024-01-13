@@ -22,9 +22,6 @@ from threading import Thread
 from . import socks
 from . import terminal
 
-global stop_now
-global term
-
 stop_now = False
 term = terminal.TerminalController()
 
