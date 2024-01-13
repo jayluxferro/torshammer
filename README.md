@@ -4,14 +4,21 @@ Tor's Hammer is a slow post dos testing tool written in Python. It can also be r
 ## Requirements
 This tool is cross-platform because is written in Python. You only need to have python installed on your operating system.
 
+## Installation
+- Clone repository.
+- Install the tool using the command below.
+```bash
+python setup.py install
+```
+
 ## Usage
 ```bash
-./torshammer.py -t <target> [-r <threads> -p <port> -T -h]
+torshammer -t <target> [-r <threads> -p <port> -T -h]
 -t|--target <Hostname|IP>
 -r|--threads <Number of threads> Defaults to 256
 -p|--port <Web Server Port> Defaults to 80
 -T|--tor Enable anonymising through tor on 127.0.0.1:9050
 -h|--help Shows this help
 
-Eg. ./torshammer.py -t 192.168.1.100 -r 256
+Eg. torshammer -t 192.168.1.100 -r 256
 ```
